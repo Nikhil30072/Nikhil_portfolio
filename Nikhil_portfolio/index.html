@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abboju Nikhil | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: #38bdf8;
+      font-size: 28px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 65px 10%;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+
+    .hero-content h2 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content h3 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #38bdf8;
+      margin-bottom: 25px;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+    }
+
+    .hero-content p {
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: white;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 50px;
+      color: #38bdf8;
+    }
+
+    .about p,
+    .contact p {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      color: #cbd5e1;
+    }
+
+    .skills-container,
+    .project-container,
+    .certificate-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      transition: 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    .education-box {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+    }
+
+    .education-box h3 {
+      color: #38bdf8;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero-content h2 {
+        font-size: 36px;
+      }
+
+      .hero-content h3 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Nikhil</h1>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <!-- <img src="profile.jpg" alt="Abboju Nikhil" class="profile-img"> -->
+      <h2>ABBOJU NIKHIL</h2>
+      <h3>Python Developer | ML & NLP Enthusiast</h3>
+
+      <p>
+        Motivated Computer Science Engineering graduate with strong skills in Python,
+        SQL, Machine Learning, NLP, and Web Technologies. Passionate about building
+        real-world applications and continuously learning new technologies.
+      </p>
+
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="https://drive.google.com/file/d/1avFduOwT8-dHSFvfTAp4y9HLpUXpuLh1/view?usp=sharing" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="title">About Me</h2>
+
+    <p>
+      I am a Computer Science Engineering graduate from Malla Reddy Institute of Technology and Science.
+      I have strong knowledge in Python, SQL, Object-Oriented Programming, Data Structures,
+      Machine Learning, and NLP.
+      <br><br>
+      I enjoy building smart applications using Python and have worked on projects involving
+      image processing, drug recommendation systems, and backend logic implementation.
+      I am interested in software development, AI-based applications, and backend technologies.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="card">
+        <h3>Programming</h3>
+        <p>Python, Core Java, SQL, JavaScript</p>
+      </div>
+
+      <div class="card">
+        <h3>Web Technologies</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="card">
+        <h3>Libraries & Tools</h3>
+        <p>Pandas, NumPy, OpenCV, Scikit-learn, NLTK, Tkinter</p>
+      </div>
+
+      <div class="card">
+        <h3>Concepts</h3>
+        <p>OOPs, Data Structures, Exception Handling, SDLC, CRUD Operations</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <<div class="card">
+  <h3>Drug Recommendation System</h3>
+
+  <p>
+    Developed a Machine Learning and NLP-based application that recommends
+    suitable drugs based on user symptoms and medical input.
+  </p>
+
+  <br>
+
+  <p>
+    Implemented TF-IDF vectorization and classification algorithms like
+    Logistic Regression and SVM for accurate prediction.
+  </p>
+
+  <br>
+
+  <p>
+    Built a simple user interface using Tkinter for user interaction and testing.
+  </p>
+
+  <br>
+
+  <p><strong>Features:</strong></p>
+
+  <ul style="padding-left:20px; color:#cbd5e1;">
+    <li>Symptom-based drug prediction</li>
+    <li>Text preprocessing using NLTK</li>
+    <li>ML model training and testing</li>
+    <li>User-friendly GUI</li>
+  </ul>
+
+  <br>
+
+  <p><strong>Tools:</strong> Python, Scikit-learn, NLTK, Tkinter</p>
+
+  <br>
+
+  <a href="https://github.com/Nikhil30072/Integrated-ML-with-NLP-framework-for-Drug-Recommendation-System-"
+     target="_blank"
+     class="btn">
+     View GitHub Repository
+  </a>
+</div>
+     <div class="card">
+  <h3>Cartoonifier Image using OpenCV</h3>
+
+  <p>
+    Developed an image processing application that converts normal images
+    into cartoon-style images using OpenCV techniques.
+  </p>
+
+  <br>
+
+  <p>
+    Applied edge detection, bilateral filtering, grayscale conversion,
+    and image smoothing to generate cartoon effects.
+  </p>
+
+  <br>
+
+  <p><strong>Features:</strong></p>
+  <ul>
+    <li>Real-time image cartoonification</li>
+    <li>Edge detection and filtering</li>
+    <li>Image preprocessing</li>
+    <li>OpenCV-based transformations</li>
+  </ul>
+
+  <br>
+
+  <p><strong>Tools:</strong> Python, OpenCV, NumPy, Matplotlib</p>
+</div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="title">Education</h2>
+
+    <div class="education-box">
+      <h3>Malla Reddy Institute of Technology and Science</h3>
+      <p>B.Tech in Computer Science Engineering</p>
+      <p>GPA: 7.2</p>
+      <p>2022 - 2025</p>
+    </div>
+
+    <div class="education-box">
+      <h3>Government Polytechnic College Bellampalli</h3>
+      <p>Diploma in Electrical & Electronics Engineering</p>
+      <p>GPA: 8.63</p>
+      <p>2019 - 2022</p>
+    </div>
+    <div class="education-box">
+      <h3>Mother Theressa High School</h3>
+      <p>High School</p>
+      <p>GPA: 9.0</p>
+      <p>2018 - 2019</p>
+    </div>
+  </section>
+
+  <section id="internship">
+    <h2 class="title">Internship</h2>
+
+    <div class="card">
+      <h3>Python Programming Intern - CodSoft</h3>
+
+      <p>
+        Developed multiple Python applications focusing on modular programming,
+        file handling, and data management.
+      </p>
+
+      <br>
+
+      <p>
+        Worked on exception handling, debugging, structured logic implementation,
+        and scalable console-based utilities.
+      </p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2 class="title">Certificates</h2>
+
+    <div class="certificate-container">
+
+      <div class="card">
+        <h3>Python Programming</h3>
+        <p>CodSoft</p>
+      </div>
+
+      <div class="card">
+        <h3>Python Programming</h3>
+        <p>CS CODENZ</p>
+      </div>
+
+      <div class="card">
+        <h3>PGDCA</h3>
+        <p>HRDS - MS Word, Excel, PowerPoint</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <p>Email: nikhilnike2910@gmail.com</p>
+    <p>Phone: 7382953607</p>
+    <p>Location: Mandamarri, Telangana</p>
+
+    <br>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/nikhil1197/" target="_blank">
+        linkedin.com/in/nikhil1197
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Abboju Nikhil | Portfolio Website</p>
+  </footer>
+
+</body>
+</html>
